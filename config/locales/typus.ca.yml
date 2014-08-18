@@ -17,7 +17,7 @@ ca:
   "Down": "Baixar"
 
   "Edit": "Editar"
-  "Edit %{resource}": "Edit %{resource}"
+  "Edit %{resource} %{id}": "Edit %{resource} %{id}"
   "Enter your email below to create the first user": "Introdueix el teu email per crear el primer usuari."
 
   "False": "Fals"

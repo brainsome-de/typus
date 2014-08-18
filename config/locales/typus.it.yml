@@ -17,7 +17,7 @@ it:
   "Down": "Giù"
 
   "Edit": "Modifica"
-  "Edit %{resource}": "Modifica %{resource}"
+  "Edit %{resource} %{id}": "Modifica %{resource} %{id}"
   "Enter your email below to create the first user": "Inserisci un'email qui sotto per creare il primo utente"
   "Error": "Errore"
   "Errors": "Errori"

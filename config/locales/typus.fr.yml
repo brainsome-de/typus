@@ -19,7 +19,7 @@ fr:
   "Down": "Descendre"
 
   "Edit": "Éditer"
-  "Edit %{resource}": "Éditer %{resource}"
+  "Edit %{resource} %{id}": "Éditer %{resource} %{id}"
   "Enter your email below to create the first user": "Entrez votre adresse email pour créer le premier utilisateur"
 
   "False": "Faux"

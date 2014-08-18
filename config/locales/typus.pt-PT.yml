@@ -16,7 +16,7 @@
   "Down": "Descer"
 
   "Edit": "Editar"
-  "Edit %{resource}": "Editar %{resource}"
+  "Edit %{resource} %{id}": "Editar %{resource} %{id}"
   "Enter your email below to create the first user": "Introduza o seu email para criar o primeiro utilizador"
 
   "False": "Falso"

@@ -24,7 +24,7 @@ es:
   "Destroy": "Eliminar"
 
   "Edit": "Editar"
-  "Edit %{resource}": "Editar %{resource}"
+  "Edit %{resource} %{id}": "Editar %{resource} %{id}"
   "Enter your email below to create the first user": "Introduce tu email para crear el primer usuario."
 
   "False": "Falso"

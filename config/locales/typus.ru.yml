@@ -16,7 +16,7 @@ ru:
   "Down": "Вниз"
 
   "Edit": "Изменить"
-  "Edit %{resource}": "Изменить %{resource}"
+  "Edit %{resource} %{id}": "Изменить %{resource} %{id}"
   "Enter your email below to create the first user":
 
   "False":

@@ -16,7 +16,7 @@ hu:
   "Down": "Le"
 
   "Edit": "Szerkesztés"
-  "Edit %{resource}": "Szerkesztés %{resource}"
+  "Edit %{resource} %{id}": "Szerkesztés %{resource} %{id}"
   "Enter your email below to create the first user": "Írd be az e-mail címed az első felhasználó létrehozásához"
 
   "False": "Hamis"
