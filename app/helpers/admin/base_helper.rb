@@ -50,7 +50,8 @@ module Admin::BaseHelper
     if params[:controller] == 'admin/dashboard'
       "base dashboard #{params[:action].parameterize}"
     else
-      "base #{@resource.model_name.human.parameterize} #{params[:action].parameterize}"
+      classes = ['base', params[:action].parameterize]
+      classes << @resource.model_name.human.parameterize if @resource 
     end
   end
 
