@@ -29,7 +29,7 @@ de:
   "I remember my password": "Ich erinnere mein Passwort"
   "If you didn't request a password update, you can ignore this message": "Falls Sie keine Passwort Änderung beantragt haben, können Sie diese Nachricht ignorieren"
   "If you have made any changes to the fields without clicking the Save/Update entry button, your changes will be lost": "Wenn Sie Änderungen an Feldern vorgenommen haben, ohne den Speichern/Bearbeiten Knopf gedrückt zu haben, gehen diese Änderungen verloren"
-  "Inactive":
+  "Inactive": "Inaktiv"
 
   "Last few days": "Letzten Tage"
   "Last 30 days": "Letzten 30 Tage"
@@ -40,7 +40,8 @@ de:
   "New": "Neu"
   "New %{resource}": "%{resource} erstellen"
   "Next": "Nächste"
-  "No %{resources} found": "Keine %{resources} gefunden"
+  "No %{resources} found": "Keine %{resources} gefunden."
+  "No entries found": "Keine Einträge gefunden."
 
   "Password recovery link sent to your email": "Der Link zur Wiederherstelllung Ihres Passworts wurde an Ihre Email Adresse geschickt"
   "Previous": "Vorheriger"
@@ -52,6 +53,10 @@ de:
   "Reset password": "Passwort zurücksetzen"
   "Resources": "Resourcen"
 
+  "Save": "Speichern"
+  "Save and add another": "Speichern und weitere anlegen"
+  "Save and continue editing": "Speichern und weiter bearbeiten"
+ 
   "Save %{resource}": "%{resource} speichern"
   "Search": "Suchen"
   "Show": "Anzeigen"
@@ -78,7 +83,11 @@ de:
   "You can't change your role": "Sie können Ihre Rolle nicht ändern"
   "You can't toggle your status": "Sie können Ihren Status nicht umschalten"
 
+  "This week": "Diese Woche"
+  "This month": "Diesen Monat"
+  "This year": "Dieses Jahr"
+
   "%{errors} prohibited this page from being saved:": "%{errors} haben diese Seite davon abgehalten gespeichert zu werden:"
-  "%{model} successfully created": "%{model} wurde erfolgreich erstellt"
-  "%{model} successfully removed": "%{model} wurde erfolgreich gelöscht"
-  "%{model} successfully updated": "%{model} wurde erfolgreich geändert"
+  "%{model} successfully created": "%{model} wurde erfolgreich erstellt."
+  "%{model} successfully removed": "%{model} wurde erfolgreich gelöscht."
+  "%{model} successfully updated": "%{model} wurde erfolgreich geändert."

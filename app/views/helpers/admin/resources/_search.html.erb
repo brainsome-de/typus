@@ -5,7 +5,7 @@
                          nil,
                          :placeholder => params[:search],
                          :class => "search-query" %>
-    <button type="submit" class="btn">Search</button>
+    <button type="submit" class="btn"><%= Typus::I18n.t('Search') %></button>
   </div>
 
   <% hidden_filters.each do |key, value| %>
