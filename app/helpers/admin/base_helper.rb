@@ -39,7 +39,7 @@ module Admin::BaseHelper
 
   def set_modal_options_for(klass)
     { "data-toggle" => "modal",
-      "data-controls-modal" => "modal-from-dom-#{klass.to_resource}",
+      "data-controls-modal" => "modal-from-dom-#{klass.model_name.param_key}",
       "data-backdrop" => "true",
       "data-keyboard" => "true",
       "class" => "ajax-modal",
