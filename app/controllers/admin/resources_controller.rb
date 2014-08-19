@@ -45,7 +45,7 @@ class Admin::ResourcesController < Admin::BaseController
 
   def create
     @item = @resource.new
-    @item.assign_attributes(item_params_for_create)
+    @item.assign_attributes(item_params_for_create, as: current_role)
 
     set_attributes_on_create
 

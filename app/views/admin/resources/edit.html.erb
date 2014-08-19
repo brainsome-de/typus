@@ -12,7 +12,7 @@
 
   <%= admin_display_flash_message %>
 
-  <% locals = { :options => params.dup.cleanup.merge!(:action => 'update') } %>
+  <% locals = { :options => params.dup.merge!(:action => 'update') } %>
   <%= render 'form', locals %>
 
   <% unless headless_mode? %>

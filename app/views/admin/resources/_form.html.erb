@@ -1,6 +1,8 @@
 <%= render "form_javascripts" %>
 <% form_class = headless_mode? ? 'form-vertical' : 'form-horizontal' %>
 
+<% resource_options = options.delete(@resource.model_name.param_key) %>
+
 <%= form_for @item,
             :url => options,
             :html => { :multipart => true, :class => form_class } do |form| %>
@@ -8,6 +10,9 @@
   <%= render "helpers/admin/resources/errors" %>
 
   <fieldset>
+    <% if resource_options %>
+      <%= hidden_field_tag("#{@resource.model_name.param_key}[#{resource_options.keys.first}]", resource_options.values.first) %>
+    <% end %>
     <%= build_form(fields, form) %>
 
     <% if headless_mode? %>
