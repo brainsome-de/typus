@@ -47,7 +47,7 @@ de:
 
   "Record moved %{to}": "Datensatz wurde verschoben nach %{to}"
   "Recover password": "Passwort vergessen?"
-  "Remove": "Eintrag"
+  "Remove": "Löschen"
   "Remove %{resource}?": "%{resource} entfernen?"
   "Reset password": "Passwort zurücksetzen"
   "Resources": "Resourcen"
