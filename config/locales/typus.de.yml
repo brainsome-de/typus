@@ -17,8 +17,7 @@ de:
   "Create %{resource}": "%{resource} erstellen"
 
   "Dashboard": "Dashboard"
-  "Down": "Runter"
-
+  
   "Edit": "Bearbeiten"
   "Edit %{resource} %{id}": "%{resource} %{id} bearbeiten"
   "Enter your email below to create the first user": "Geben Sie Ihre Email Adresse unten ein, um den ersten Benutzer zu erstellen"
@@ -74,7 +73,11 @@ de:
   "True": "Ja"
 
   "Unrelate": "Trennen"
+
   "Up": "Hoch"
+  "Down": "Runter"
+  "Top": "An den Anfang"
+  "Bottom": "Ans Ende"
 
   "View all %{attribute}": "Alle %{attribute} anzeigen"
   "View site": "Webseite anzeigen"
