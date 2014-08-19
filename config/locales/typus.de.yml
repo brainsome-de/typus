@@ -8,6 +8,7 @@ de:
   "List" : 'Liste'
   "Add": "Hinzufügen"
   "Add New": "Erstellen"
+  "Add %{resource}": "%{resource} hinzufügen"
   "All" : 'Alle'
   "Are you sure?": "Sind Sie sicher?"
   "Assign": "Zuweisen"
