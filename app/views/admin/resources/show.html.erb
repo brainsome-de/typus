@@ -14,12 +14,14 @@
 
   <%= render 'show' %>
 
-  <dl class="dl-horizontal">
+  <table class="table table-hover">
     <% build_display(@item, fields).each do |attribute, type| %>
-      <dt><%= attribute %></dt>
-      <dd><%= type %></dd>
+    <tr>
+      <td><%= attribute %></td>
+      <td><%= type %></td>      
+    </tr>
     <% end %>
-  </dl>
+  </table>
 
   <%= typus_relationships unless headless_mode? %>
 <% end %>
