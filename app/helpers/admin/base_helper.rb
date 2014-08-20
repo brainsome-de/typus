@@ -51,7 +51,8 @@ module Admin::BaseHelper
       "base dashboard #{params[:action].parameterize}"
     else
       classes = ['base', params[:action].parameterize]
-      classes << @resource.model_name.human.parameterize if @resource 
+      classes << ['resource', @resource.model_name.param_key] if @resource 
+      classes.flatten.join(" ")
     end
   end
 
