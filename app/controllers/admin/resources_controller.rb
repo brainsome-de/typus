@@ -61,6 +61,8 @@ class Admin::ResourcesController < Admin::BaseController
   end
 
   def edit
+    set_default_action
+    add_resource_action("Destroy", {:action => "destroy"}, { :data => { :confirm => "#{Typus::I18n.t("Trash")}?" }, :method => 'delete'})
     custom_actions_for(:edit).each do |action|
       prepend_resources_action(action.titleize, {:action => action, :id => @item})
     end
