@@ -90,7 +90,9 @@ de:
   "This month": "Diesen Monat"
   "This year": "Dieses Jahr"
 
-  "%{errors} prohibited this page from being saved:": "%{errors} haben diese Seite davon abgehalten gespeichert zu werden:"
+  "Errors prohibited this page from being saved:":
+    one: "Die Seite konnte wegen eines Fehlers nicht gespeichert werden:"
+    other: "Die Seite konnte wegen %{count} Fehlern nicht gespeichert werden:"
   "%{model} successfully created": "%{model} wurde erfolgreich erstellt."
   "%{model} successfully removed": "%{model} wurde erfolgreich gelöscht."
   "%{model} successfully updated": "%{model} wurde erfolgreich geändert."
