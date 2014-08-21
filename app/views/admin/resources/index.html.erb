@@ -55,9 +55,9 @@
           </li>
         <% end %>
 
-        <% if 1 == 2 && resource.any? && (formats = resource.typus_options_for(:export).extract_settings).any? %>
+        <% if resource.any? && (formats = resource.typus_options_for(:export).extract_settings).any? %>
           <% formats.each do |format| %>
-            <li><%= link_to format.upcase, :format => format %></li>
+            <li><%= link_to format.upcase, :format => format, scope: params[:scope] %></li>
           <% end %>
         <% end %>
       </ul>
