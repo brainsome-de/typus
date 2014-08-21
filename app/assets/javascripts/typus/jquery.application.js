@@ -2,9 +2,12 @@ $(document).ready(function() {
 
     // $("#quicksearch").searchField();
 
-    $(".resource :input", document.myForm).bind("change", function() {
-        Typus.setConfirmUnload(true);
-    });
+    // this didn't work as intended. But since I added the .resource class
+    // on the body element, it worked in places where it shouldn't. I'm disabling it
+    // to return to the earlier behaviour ...
+    // $(".resource :input", document.myForm).bind("change", function() {
+    //     Typus.setConfirmUnload(true);
+    // });
 
     // This method is used by Typus::Controller::Bulk
     $(".action-toggle").click(function() {
