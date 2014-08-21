@@ -18,7 +18,7 @@
 
   <%= admin_display_flash_message %>
 
-  <% if @resource.typus_scopes.any? || predefined_filters.any? %>
+  <% if @resource.typus_options_for(:counters) || @resource.typus_scopes.any? || predefined_filters.any? %>
     <div class="tabbable tabs-below">
       <ul class="nav nav-tabs">
         <% all_klass = params[:scope] ? "inactive" : "active" %>
@@ -55,7 +55,8 @@
           </li>
         <% end %>
 
-        <% if resource.any? && (formats = resource.typus_options_for(:export).extract_settings).any? %>
+        <% show_export_formats = (resource.any? && (formats = resource.typus_options_for(:export).extract_settings).any?) %>
+        <% if show_export_formats %>
           <% formats.each do |format| %>
             <li><%= link_to format.upcase, :format => format, scope: params[:scope] %></li>
           <% end %>
