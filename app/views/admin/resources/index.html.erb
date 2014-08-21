@@ -35,7 +35,7 @@
           <% klass = params[:scope].eql?(scope) ? "active" : "inactive" %>
           <li class="<%= klass %>">
             <%= link_to url_for(:scope => scope) do %>
-              <%= Typus::I18n.t(scope.humanize) %>
+              <%= Typus::I18n.t(scope, scope: "typus.scopes.#{@resource.model_name.singular}") %>
               <% if @resource.typus_options_for(:counters)  %>
                 <%= "&nbsp; <span class='badge'>#{@resource.send(scope).count}</span>".html_safe %>
               <% end %>
