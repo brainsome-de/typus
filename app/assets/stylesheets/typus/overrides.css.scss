@@ -1,4 +1,46 @@
-body.base { padding-top: 20px; }
-h1 { padding-bottom: 0.5em; }
-.icon-destroy { background-position: -456px 0; }
-.icon-show { background-position: -96px -120px; }
+body.base { 
+  padding-top: 20px; 
+}
+
+h1 { 
+  padding-bottom: 0.5em; 
+}
+
+.icon-destroy { 
+  background-position: -456px 0; 
+}
+
+.icon-show { 
+  background-position: -96px -120px; 
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  // Override the path to the icons. The way they are embedded in bootstrap.css doesn't work with 
+  // the asset pipeline of Rails 4. The asset digest now _must_ be present in the image name, since
+  // Rails 4 doesn't generate a non-digest version of all assets anymore.
+  background-image: image-url("img/glyphicons-halflings.png");
+}
+
+.icon-white,
+.nav-pills > .active > a > [class^="icon-"],
+.nav-pills > .active > a > [class*=" icon-"],
+.nav-list > .active > a > [class^="icon-"],
+.nav-list > .active > a > [class*=" icon-"],
+.navbar-inverse .nav > .active > a > [class^="icon-"],
+.navbar-inverse .nav > .active > a > [class*=" icon-"],
+.dropdown-menu > li > a:hover > [class^="icon-"],
+.dropdown-menu > li > a:focus > [class^="icon-"],
+.dropdown-menu > li > a:hover > [class*=" icon-"],
+.dropdown-menu > li > a:focus > [class*=" icon-"],
+.dropdown-menu > .active > a > [class^="icon-"],
+.dropdown-menu > .active > a > [class*=" icon-"],
+.dropdown-submenu:hover > a > [class^="icon-"],
+.dropdown-submenu:focus > a > [class^="icon-"],
+.dropdown-submenu:hover > a > [class*=" icon-"],
+.dropdown-submenu:focus > a > [class*=" icon-"] {
+  // Override the path to the icons. The way they are embedded in bootstrap.css doesn't work with 
+  // the asset pipeline of Rails 4. The asset digest now _must_ be present in the image name, since
+  // Rails 4 doesn't generate a non-digest version of all assets anymore.
+  background-image: image-url("img/glyphicons-halflings-white.png");
+}
