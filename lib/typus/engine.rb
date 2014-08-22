@@ -3,14 +3,14 @@ module Admin
 
     initializer :assets do |config|
 
-      asset_libraries = Dir.glob(root.join('vendor/assets/*'))
-      asset_libraries.each do |dir|
-        %w(img css js).each do |asset_type|
-          Rails.application.config.assets.paths << File.join(dir, asset_type)
-        end
-      end
+      # Add all "frontend libraries" (bootcamp etc.) to the load path for the asset pipeline. 
+      # This is necessary since typus has a nondefault directory structure in vendor/assets.
+      extra_asset_paths = Dir.glob(File.join(root, 'vendor/assets/*/{img,images,css,js}'))
+      Rails.application.config.assets.paths += extra_asset_paths
 
-      Rails.application.config.assets.precompile += ['glyphicons-halflings.png', 'glyphicons-halflings-white.png']
+      # Add nondefault image directory to the precompile array, otherwise images in there they won't
+      # become available for the asset pipeline.
+      Rails.application.config.assets.precompile << %r{^img/.+}
 
     end
   end
