@@ -8,13 +8,13 @@ test_files = Dir['test/**/*'].keep_if{|file| File.file?(file)}
 ignores = Dir['doc/**/*'].keep_if{|file| File.file?(file)} + %w(.travis.yml .gitignore)
 
 Gem::Specification.new do |spec|
-  spec.name          = "typus"
+  spec.name          = "brainsome_typus"
   spec.version       = Typus::VERSION::STRING
-  spec.authors       = ["Francesc Esplugas"]
-  spec.email         = ["support@typuscmf.com"]
+  spec.authors       = ["Francesc Esplugas", "Brainsome-Developers"]
+  spec.email         = ["support@typuscmf.com", nil]
   spec.description   = "Ruby on Rails Admin Panel (Engine) to allow trusted users edit structured content."
   spec.summary       = "Effortless backend interface for Ruby on Rails applications. (Admin scaffold generator)"
-  spec.homepage      = "http://www.typuscmf.com/"
+  spec.homepage      = "http://github.com/torial/typus"
   spec.license       = "MIT"
 
   spec.platform = Gem::Platform::RUBY
@@ -22,6 +22,9 @@ Gem::Specification.new do |spec|
   spec.files         = files - test_files - ignores
   spec.test_files    = []
   spec.require_paths = ["lib"]
+
+  spec.required_ruby_version     = '>= 1.9.3'
+  spec.required_rubygems_version = '>= 1.8.11'
 
   spec.add_dependency "bcrypt-ruby", "~> 3.1.2"
   spec.add_dependency "jquery-rails"
