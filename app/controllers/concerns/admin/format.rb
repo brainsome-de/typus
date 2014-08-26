@@ -13,11 +13,10 @@ module Admin
 
     def generate_csv
       fields = @resource.typus_fields_for(:csv)
-      records = @resource.all
 
       data = ::CSV.generate do |csv|
         csv << fields.keys.map { |k| @resource.human_attribute_name(k) }
-        records.each do |record|
+        @resource.find_each do |record|
           csv << fields.map do |key, value|
                    case value
                    when :transversal
