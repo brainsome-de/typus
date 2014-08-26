@@ -45,7 +45,9 @@ class Admin::ResourcesController < Admin::BaseController
 
   def create
     @item = @resource.new
-    @item.assign_attributes(item_params_for_create, as: current_role)
+    args = [item_params_for_create]
+    args << {as: current_role} if defined?(ProtectedAttributes)
+    @item.assign_attributes(*args)
 
     set_attributes_on_create
 
@@ -88,7 +90,9 @@ class Admin::ResourcesController < Admin::BaseController
 
   def update
     respond_to do |format|
-      if @item.update_attributes(item_params_for_update, as: current_role)
+      args = [item_params_for_update]
+      args << {as: current_role} if defined?(ProtectedAttributes)
+      if @item.update_attributes(*args)
         set_attributes_on_update
         format.html { redirect_on_success }
         format.json { render :json => @item }
