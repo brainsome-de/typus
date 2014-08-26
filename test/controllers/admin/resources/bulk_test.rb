@@ -18,7 +18,12 @@ class Admin::EntryBulksControllerTest < ActionController::TestCase
 
   test "get index shows available bulk_actions" do
     get :index
-    assert_equal [["Move to Trash", "bulk_destroy"]], assigns(:bulk_actions)
+    expected_actions = [
+      ["Move to Trash", "bulk_destroy"], 
+      ["Mark as published", "bulk_publish"], 
+      ["Mark as unpublished", "bulk_unpublish"]
+    ]
+    assert_equal expected_actions, assigns(:bulk_actions)
   end
 
   test "get bulk_destroy removes all items" do
