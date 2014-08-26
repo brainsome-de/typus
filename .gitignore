@@ -15,3 +15,5 @@ vendor/gems
 vendor/ruby
 
 .DS_Store
+.ruby-version
+.ruby-gemset
