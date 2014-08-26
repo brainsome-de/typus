@@ -13,3 +13,7 @@ test/dummy/vendor/bundle/
 vendor/bundle
 vendor/gems
 vendor/ruby
+
+.DS_Store
+.ruby-version
+.ruby-gemset

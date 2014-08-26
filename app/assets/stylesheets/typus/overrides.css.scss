@@ -19,7 +19,7 @@ h1 {
   // Override the path to the icons. The way they are embedded in bootstrap.css doesn't work with 
   // the asset pipeline of Rails 4. The asset digest now _must_ be present in the image name, since
   // Rails 4 doesn't generate a non-digest version of all assets anymore.
-  background-image: image-url("img/glyphicons-halflings.png");
+  background-image: image-url("glyphicons-halflings.png");
 }
 
 .icon-white,
@@ -42,5 +42,5 @@ h1 {
   // Override the path to the icons. The way they are embedded in bootstrap.css doesn't work with 
   // the asset pipeline of Rails 4. The asset digest now _must_ be present in the image name, since
   // Rails 4 doesn't generate a non-digest version of all assets anymore.
-  background-image: image-url("img/glyphicons-halflings-white.png");
+  background-image: image-url("glyphicons-halflings-white.png");
 }
