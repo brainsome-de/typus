@@ -46,7 +46,7 @@ PATH
     typus (4.0.0.beta1)
       bcrypt-ruby (~> 3.1.2)
       jquery-rails
-      rails (~> 4)
+      rails (~> 4.0.1)
 
 GEM
   remote: https://rubygems.org/
