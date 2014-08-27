@@ -1,0 +1,25 @@
+!!!
+%html{:lang => I18n.locale}
+
+  %head
+    = render 'admin/shared/head'
+
+  %body{:class => body_class}
+
+    .container-fluid
+      .navbar
+        .navbar-inner
+          .container
+            .brand= admin_title
+            = render "helpers/admin/base/apps"
+            = render "helpers/admin/base/login_info"
+      
+      .row-fluid
+        - if controller.controller_name.eql?('dashboard')
+          = yield
+          
+        - else
+          .span3
+            = build_sidebar
+          .span9
+            = yield :main_grid
