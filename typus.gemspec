@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["support@typuscmf.com", nil]
   spec.description   = "Ruby on Rails Admin Panel (Engine) to allow trusted users edit structured content."
   spec.summary       = "Effortless backend interface for Ruby on Rails applications. (Admin scaffold generator)"
-  spec.homepage      = "http://github.com/torial/typus"
+  spec.homepage      = "https://github.com/brainsome-de/typus"
   spec.license       = "MIT"
 
   spec.platform = Gem::Platform::RUBY
