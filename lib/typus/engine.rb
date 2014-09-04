@@ -11,7 +11,7 @@ module Admin
       # Add nondefault image directory to the precompile array, otherwise images in there won't
       # become available for the asset pipeline.
       Rails.application.config.assets.precompile << %r{^img/.+}
-
+      Rails.application.config.assets.precompile += %w( glyphicons-halflings.png glyphicons-halflings-white.png)
     end
   end
 end
