@@ -35,7 +35,9 @@ class Admin::ResourcesController < Admin::BaseController
   end
 
   def new
-    @item = @resource.new(item_params_for_new)
+    args = [item_params_for_new]
+    args << {as: current_role} if defined?(ProtectedAttributes)
+    @item = @resource.new(*args)
 
     respond_to do |format|
       format.html
