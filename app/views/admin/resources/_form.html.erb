@@ -14,6 +14,7 @@
       <%= hidden_field_tag("#{@resource.model_name.param_key}[#{resource_options.keys.first}]", resource_options.values.first) %>
     <% end %>
     <%= build_form(fields, form) %>
+    <%= hidden_field_tag :resource_class, @item.class.model_name.name %>
 
     <% if headless_mode? %>
       <% unless @item.new_record? %>

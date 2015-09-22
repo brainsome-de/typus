@@ -139,7 +139,11 @@ class Admin::ResourcesController < Admin::BaseController
   end
 
   def resource
-    params[:controller].extract_class
+    if params[:resource_class]
+      params[:resource_class].classify.constantize
+    else
+      params[:controller].extract_class
+    end
   rescue
     params[:controller].extract_singular_class
   end
