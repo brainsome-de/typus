@@ -1,0 +1,7 @@
+<div class="control-group" id="<%= attribute_id %>">
+  <%= form.label attribute, label_text, { :class => "control-label" } %>
+  <div class="controls">
+    <% options.merge!({ disabled: true }) -%>
+    <%= form.text_field attribute, options %>
+  </div>
+</div>
