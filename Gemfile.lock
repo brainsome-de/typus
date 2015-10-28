@@ -43,7 +43,7 @@ GIT
 PATH
   remote: .
   specs:
-    brainsome_typus (4.0.0.beta6)
+    brainsome_typus (4.0.0.beta9)
       bcrypt-ruby (~> 3.1.2)
       jquery-rails
       rails (~> 4)
@@ -203,3 +203,6 @@ DEPENDENCIES
   sass-rails (~> 4.0.0)
   sqlite3 (~> 1.3.8)
   uglifier (~> 1.3.0)
+
+BUNDLED WITH
+   1.10.6
