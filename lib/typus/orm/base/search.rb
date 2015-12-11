@@ -16,7 +16,7 @@ module Typus
             interval = Time.zone.now.send(value)
             build_filter_interval(interval, key)
           else
-            raise "#{value} is not allowed!"
+            raise "value=#{value.inspect} is not allowed!"
           end
         end
 
@@ -50,6 +50,8 @@ module Typus
               !model_relationships.keys.include?(k.to_sym) &&
               !(k.to_sym == :search)
             end
+
+            query_params.reject! { |k, v| v.blank? }
 
             query_params.compact.each do |key, value|
               filter_type = model_fields[key.to_sym] || model_relationships[key.to_sym] || key
