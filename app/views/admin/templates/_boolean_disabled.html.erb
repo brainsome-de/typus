@@ -1,0 +1,8 @@
+<div class="control-group" id="<%= attribute_id %>">
+  <%= form.label attribute, label_text, { :class => "control-label" } %>
+  <div class="controls">
+    <%#= form.datetime_select attribute, options, html_options %>
+    <% options.merge!({ disabled: true }) -%>
+    <%= form.check_box attribute, options %>
+  </div>
+</div>
