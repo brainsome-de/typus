@@ -37,7 +37,7 @@
             <%= link_to url_for(:scope => scope) do %>
               <%= Typus::I18n.t(scope, scope: "typus.scopes.#{@resource.model_name.singular}") %>
               <% if @resource.typus_options_for(:counters)  %>
-                <%= "&nbsp; <span class='badge'>#{@resource.send(scope).count}</span>".html_safe %>
+                <%= "&nbsp; <span class='badge'>#{resource.send(scope).count}</span>".html_safe %>
               <% end %>
           <% end %>
           </li>
